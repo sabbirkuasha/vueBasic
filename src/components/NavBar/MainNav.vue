@@ -17,7 +17,11 @@ export default {
         item2: {
           name: 'About',
           url: '/about'
-        }
+        },
+        item3: {
+          name: 'Form',
+          url: '/multi'
+        },
       },
       menuItemsArray: ['Home', 'About']
     }

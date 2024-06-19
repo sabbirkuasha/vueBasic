@@ -1,6 +1,6 @@
 <template>
     <div id="steps"
-        class="rounded-lg bg-[url('@/assets/images/bg-sidebar-desktop.svg')] w-[322px] h-[566px] border-none overflow-hidden">
+        class="rounded-lg bg-[url('@/assets/images/bg-sidebar-desktop.svg')] h-[566px] border-none aspect-[4.35/9] overflow-hidden">
         <div id="dot" class=" text-white py-6 px-4">
             <ol class="flex flex-col gap-5 ">
                 <li v-for="step in steps" :key="step.id" class="flex flex-row gap-2 items-center font-semibold w-52">
