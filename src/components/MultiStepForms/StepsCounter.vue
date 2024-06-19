@@ -1,5 +1,6 @@
 <template>
-    <div id="steps" class="rounded-lg bg-blue-950 border-2">
+    <div id="steps"
+        class="rounded-lg bg-[url('@/assets/images/bg-sidebar-desktop.svg')] w-[322px] h-[566px] border-none overflow-hidden">
         <div id="dot" class=" text-white py-6 px-4">
             <ol class="flex flex-col gap-5 ">
                 <li v-for="step in steps" :key="step.id" class="flex flex-row gap-2 items-center font-semibold w-52">
@@ -19,27 +20,13 @@
 </template>
 
 <script setup>
-const steps = ([
-    {
-        id: 1,
-        title: 'Step 1',
-        stepTitle: 'Your Info'
-    },
-    {
-        id: 2,
-        title: 'Step 2',
-        stepTitle: 'Select Plans'
-    },
-    {
-        id: 3,
-        title: 'Step 3',
-        stepTitle: 'Add-Ons'
-    },
-    {
-        id: 4,
-        title: 'Step 4',
-        stepTitle: 'Summary'
-    },
-])
+
+defineProps({
+    steps: {
+        type: Array,
+        required: true
+    }
+});
+
 
 </script>
