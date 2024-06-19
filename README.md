@@ -7,6 +7,10 @@
 - [x] binding properties of html tag using v-bind
 - [x] Difference between declaring script tag using VueJS v2 and VueJS v3
 
-### Work in progress
+### Work in progress (Form)
 
 https://www.youtube.com/watch?v=I6zDKqQFmqU&list=PLM9dAovgoq9nCcdkyfbFa_990hJqE2yRi&index=3
+
+### Work in progress (pinia)
+
+https://youtu.be/JGC7aAC-3y8

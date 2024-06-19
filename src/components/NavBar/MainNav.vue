@@ -22,6 +22,10 @@ export default {
           name: 'Form',
           url: '/multi'
         },
+        item4: {
+          name: 'Counter',
+          url: '/counter'
+        },
       },
       menuItemsArray: ['Home', 'About']
     }

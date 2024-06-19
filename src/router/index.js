@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import MultiStep from '@/components/MultiStepForms/MultiStep.vue'
+import CounterMain from '@/components/Counter/CounterMain.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,6 +15,11 @@ const router = createRouter({
       path: '/multi',
       name: 'multiStepForm',
       component: MultiStep
+    },
+    {
+      path: '/counter',
+      name: 'counter',
+      component: CounterMain
     },
     {
       path: '/about',
