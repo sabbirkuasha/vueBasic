@@ -4,7 +4,7 @@
             class="outline outline-slate-200 outline-[15px] flex rounded-sm overflow-hidden bg-slate-200">
             <StepsCounter :steps="steps" />
 
-            <div id="steps-form-details" class="border-none p-5">
+            <div id="steps-form-details" class="border-none px-5 py-1">
                 <PersonalInfo />
 
             </div>
