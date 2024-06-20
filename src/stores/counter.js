@@ -22,6 +22,7 @@ export const useCounterStore = defineStore({
   // getters are reactive functions
   getters: {
     oddorEven: (state) => {
+      console.log('odd or even function fired', state.name)
       if (state.count % 2 === 0) return 'Even'
       return 'Odd'
     }
