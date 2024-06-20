@@ -14,9 +14,9 @@
 
 ### Pinia / Store / State Management
 
-- [ ] Basic Usage of pinia
-- [ ] Core thought process of pinia
-- [ ] Store vs State Mangement
+- [x] Basic Usage of pinia
+- [x] Core thought process of pinia
+- [x] Store vs State Mangement
 
 ### Work in progress (Form)
 
