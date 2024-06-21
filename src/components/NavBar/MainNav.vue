@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 import ActionButton from '@/components/common/ActionButton.vue'
 
 export default {
@@ -31,6 +31,31 @@ export default {
     }
   }
 }
+</script> -->
+
+<script setup>
+import { ref } from 'vue';
+import ActionButton from '@/components/common/ActionButton.vue';
+
+const company = ref('Sabbirz');
+const menuItems = ref({
+  item1: {
+    name: 'Home',
+    url: '/'
+  },
+  item2: {
+    name: 'About',
+    url: '/about'
+  },
+  item3: {
+    name: 'Form',
+    url: '/multi'
+  },
+  item4: {
+    name: 'Counter',
+    url: '/counter'
+  },
+});
 </script>
 
 <template>
@@ -41,7 +66,8 @@ export default {
     <li></li>
     <ul class="menu-horizontal items-center">
       <li v-for="menuItem in menuItems" :key="menuItem">
-        <a :href="menuItem.url">{{ menuItem.name }}</a>
+        <router-link :to="menuItem.url" class="">{{ menuItem.name }}</router-link>
+        <!-- <a :href="menuItem.url">{{ menuItem.name }}</a> -->
       </li>
       <ActionButton />
     </ul>

@@ -1,6 +1,6 @@
 <template>
-    <div class="w-full ring">
-        <div class="prose mx-auto ring max-w-full">
+    <div class="w-full">
+        <div class="prose mx-auto max-w-full">
             <div class="text-center pt-4">
                 <h1>Counter App</h1>
             </div>
@@ -12,18 +12,13 @@
             <div class=" gap-5 flex justify-center ">
                 <button @click="increaseCount" class="btn text-3xl btn-primary">+</button>
                 <button @click="decreaseCount" class="btn text-3xl btn-secondary">-</button>
-                <button @click="updateName" class="btn text-3xl btn-outline">Update Name</button>
+
             </div>
             <hr>
             <div class="text-center">
-                <!-- <h2>
-                    This counter is: {{ OddorEven }}
-                </h2> -->
-                <h2 class="uppercase">
-                    Name is: {{ storeCounter.name }}
-                </h2>
+                <h1>Two Way Data Binding</h1>
+                <input class="input input-primary focus:outline-none" type="number" v-model="storeCounter.count">
             </div>
-
         </div>
     </div>
 </template>
@@ -33,7 +28,7 @@
 import { useCounterStore } from "@/stores/counter"
 import { computed, ref } from "vue"
 
-console.log(useCounterStore)
+// console.log(useCounterStore)
 const storeCounter = useCounterStore()
 console.log(storeCounter)
 
@@ -46,14 +41,6 @@ const increaseCount = () => {
 const decreaseCount = () => {
     count.value--
     storeCounter.decreaseCount()
-}
-
-const updateName = () => {
-    if (storeCounter.name == "sab") {
-        storeCounter.name = "trina"
-    } else {
-        storeCounter.name = "sab"
-    }
 }
 
 const OddorEven = computed(() => {

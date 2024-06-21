@@ -6,6 +6,7 @@
 - [x] Loop through object using v-for
 - [x] binding properties of html tag using v-bind
 - [x] Difference between declaring script tag using VueJS v2 and VueJS v3
+- [x] SPA Navigation VS HTML Anhcor Navigation (Full page refressh Navigation)
 
 ### Reactivity
 
@@ -17,11 +18,16 @@
 - [x] Basic Usage of pinia
 - [x] Core thought process of pinia
 - [x] Store vs State Mangement
+- [x] Two Way Binding
 
 ### Work in progress (Form)
 
 https://www.youtube.com/watch?v=I6zDKqQFmqU&list=PLM9dAovgoq9nCcdkyfbFa_990hJqE2yRi&index=3
 
-### Work in progress (pinia)
+### Progress and update
 
-https://youtu.be/JGC7aAC-3y8
+1. Learning Basic of Pinia
+   **Subject:** Learning Basic of Pinia
+   **Tutorial:** https://youtu.be/JGC7aAC-3y8
+   **Documentation:** Done
+   **Progress:** Complete
