@@ -2,7 +2,7 @@
     <div class="w-full">
         <div class="prose mx-auto max-w-full">
             <div class="text-center pt-4">
-                <h1>Counter App</h1>
+                <h1 class="font-Playwrite">Counter App</h1>
             </div>
             <div class=" flex flex-row justify-center gap-6 ">
                 <h1 class="">{{ count }} ({{ OddorEven }})</h1>
@@ -16,7 +16,7 @@
             </div>
             <hr>
             <div class="text-center">
-                <h1>Two Way Data Binding</h1>
+                <h1 class="font-Playwrite">Two Way Data Binding</h1>
                 <input class="input input-primary focus:outline-none" type="number" v-model="storeCounter.count">
             </div>
         </div>
