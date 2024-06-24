@@ -6,8 +6,8 @@
 
             <div id="steps-form-details" class="border-none px-5 py-1">
                 <!-- <PersonalInfo /> -->
-                <!-- <PlansInfo /> -->
-                <AddOns />
+                <PlansInfo />
+                <!-- <AddOns /> -->
 
             </div>
         </div>

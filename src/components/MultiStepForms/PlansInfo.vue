@@ -34,10 +34,7 @@
                 </div>
             </div>
 
-            <div class="flex justify-between mt-5">
-                <button class="btn btn-outline w-36" type="button">Back</button>
-                <button class="btn w-36" type="button">Next</button>
-            </div>
+            <SetpForwardBackward />
         </form>
     </div>
 </template>
@@ -45,6 +42,8 @@
 <script setup>
 import { ref } from 'vue';
 import MShead from './Common/MShead.vue';
+import SetpForwardBackward from './Common/SetpForwardBackward.vue';
+
 
 
 const planList = ref([
