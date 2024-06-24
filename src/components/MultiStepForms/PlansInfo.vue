@@ -1,11 +1,7 @@
 <template>
     <div
         class="prose prose-h1:text-slate-900 prose-h2:text-slate-800 prose-h1:mb-0 prose-h2:my-0 prose-p:mt-3 prose-p:text-slate-600 prose-label:text-slate-900 w-full px-4 h-full  flex flex-col">
-
-        <div class="">
-            <h1 class="">Select your plan</h1>
-            <p class="">have the option of monthly or yearly billing</p>
-        </div>
+        <MShead heading="Choose Your Plan" subHeading="You can opt for monthly or yearly billing." />
         <form class="flex flex-col flex-grow  justify-between">
             <div class="flex flex-col gap-8">
                 <div class="flex flex-row justify-between gap-5">
@@ -48,6 +44,8 @@
 
 <script setup>
 import { ref } from 'vue';
+import MShead from './Common/MShead.vue';
+
 
 const planList = ref([
     {

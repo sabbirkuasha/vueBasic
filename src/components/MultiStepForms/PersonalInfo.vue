@@ -1,10 +1,11 @@
 <template>
     <div
         class="prose prose-h1:text-slate-900 prose-h1:mb-0 prose-p:mt-3 prose-p:text-slate-600 prose-label:text-slate-900 w-full px-4 h-full  flex flex-col">
-        <div class="">
+        <!-- <div class="">
             <h1 class="">Personal Info</h1>
             <p class="">Please provide your Name, email address, and phone number.</p>
-        </div>
+        </div> -->
+        <MShead heading="Personal Info" subHeading="Please provide your Name, email address, and phone number." />
         <form class="flex flex-col flex-grow gap-5  justify-between ">
             <div class="flex flex-col gap-5">
                 <div class="flex flex-col w-full gap-2">
@@ -30,5 +31,6 @@
 </template>
 
 <script setup>
+import MShead from './Common/MShead.vue';
 
 </script>

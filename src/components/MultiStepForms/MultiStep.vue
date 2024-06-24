@@ -6,7 +6,8 @@
 
             <div id="steps-form-details" class="border-none px-5 py-1">
                 <!-- <PersonalInfo /> -->
-                <PlansInfo />
+                <!-- <PlansInfo /> -->
+                <AddOns />
 
             </div>
         </div>
@@ -18,6 +19,7 @@
 import PersonalInfo from './PersonalInfo.vue'
 import StepsCounter from './StepsCounter.vue'
 import PlansInfo from './PlansInfo.vue'
+import AddOns from './AddOns.vue';
 
 
 const steps = ([
