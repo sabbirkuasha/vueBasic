@@ -5,7 +5,8 @@
             <StepsCounter :steps="steps" />
 
             <div id="steps-form-details" class="border-none px-5 py-1">
-                <PersonalInfo />
+                <!-- <PersonalInfo /> -->
+                <PlansInfo />
 
             </div>
         </div>
@@ -16,6 +17,7 @@
 <script setup>
 import PersonalInfo from './PersonalInfo.vue'
 import StepsCounter from './StepsCounter.vue'
+import PlansInfo from './PlansInfo.vue'
 
 
 const steps = ([
