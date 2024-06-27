@@ -4,10 +4,8 @@
             class="outline outline-slate-200 outline-[15px] flex rounded-sm overflow-hidden bg-slate-200 ">
             <StepsCounter :steps="steps" />
 
-            <div id="steps-form-details" class="border-none px-5 py-1 w-[500px]">
-
+            <div id="steps-form-details" class="border-none px-5 py-1 w-[600px]">
                 <PersonalInfo v-if="mFormData.currentStep == 1" />
-
                 <PlansInfo v-if="mFormData.currentStep == 2" />
                 <AddOns v-if="mFormData.currentStep == 3" />
                 <SummaryDetails v-if="mFormData.currentStep == 4" />

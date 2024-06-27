@@ -43,6 +43,10 @@
 
 <script setup>
 import { ref } from 'vue';
+
+import iconArcade from '../../assets/images/icon-arcade.svg';
+import iconAdvanced from '../../assets/images/icon-advanced.svg';
+import iconPro from '../../assets/images/icon-pro.svg';
 import MShead from './Common/MShead.vue';
 import SetpForwardBackward from './Common/SetpForwardBackward.vue';
 
@@ -56,7 +60,7 @@ const planList = ref([
             monthly: 9,
             yearly: 9 * (12 - 2)
         },
-        planImage: '/src/assets/images/icon-arcade.svg',
+        planImage: iconArcade,
         inputID: 'arcade'
     },
     {
@@ -66,7 +70,7 @@ const planList = ref([
             monthly: 9,
             yearly: 9 * (12 - 2)
         },
-        planImage: '/src/assets/images/icon-advanced.svg',
+        planImage: iconAdvanced,
         inputID: 'advanced'
     },
     {
@@ -76,7 +80,7 @@ const planList = ref([
             monthly: '$9',
             yearly: 9 * (12 - 2)
         },
-        planImage: '/src/assets/images/icon-pro.svg',
+        planImage: iconPro,
         inputID: 'pro'
     },
 ])
