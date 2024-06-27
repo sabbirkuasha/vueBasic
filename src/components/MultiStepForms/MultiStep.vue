@@ -4,12 +4,16 @@
             class="outline outline-slate-200 outline-[15px] flex rounded-sm overflow-hidden bg-slate-200 ">
             <StepsCounter :steps="steps" />
 
-            <div id="steps-form-details" class="border-none px-5 py-1 w-96 h-[566px] ">
-                <!-- <PersonalInfo /> -->
+            <div id="steps-form-details" class="border-none px-5 py-1 w-[500px] h-[566px] ">
+                <div class="text-right text-gray-800">
+                    <p>Current Step: <span class="font-bold">{{ mFormData.currentStep }}</span>/5</p>
+                </div>
+                <PersonalInfo />
+
                 <!-- <PlansInfo /> -->
                 <!-- <AddOns /> -->
                 <!-- <SummaryDetails /> -->
-                <ThankYou />
+                <!-- <ThankYou /> -->
 
             </div>
         </div>
@@ -25,6 +29,10 @@ import AddOns from './AddOns.vue';
 import SummaryDetails from './SummaryDetails.vue'
 import ThankYou from './ThankYou.vue';
 
+import { mForm } from '@/stores/multiForm';
+
+const mFormData = mForm()
+console.log(mFormData.currentStep)
 
 const steps = ([
     {
