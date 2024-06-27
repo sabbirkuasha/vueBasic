@@ -4,16 +4,14 @@
             class="outline outline-slate-200 outline-[15px] flex rounded-sm overflow-hidden bg-slate-200 ">
             <StepsCounter :steps="steps" />
 
-            <div id="steps-form-details" class="border-none px-5 py-1 w-[500px] h-[566px] ">
-                <div class="text-right text-gray-800">
-                    <p>Current Step: <span class="font-bold">{{ mFormData.currentStep }}</span>/5</p>
-                </div>
-                <PersonalInfo />
+            <div id="steps-form-details" class="border-none px-5 py-1 w-[500px]">
 
-                <!-- <PlansInfo /> -->
-                <!-- <AddOns /> -->
-                <!-- <SummaryDetails /> -->
-                <!-- <ThankYou /> -->
+                <PersonalInfo v-if="mFormData.currentStep == 1" />
+
+                <PlansInfo v-if="mFormData.currentStep == 2" />
+                <AddOns v-if="mFormData.currentStep == 3" />
+                <SummaryDetails v-if="mFormData.currentStep == 4" />
+                <ThankYou v-if="mFormData.currentStep == 5" />
 
             </div>
         </div>

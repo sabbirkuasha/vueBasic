@@ -22,9 +22,12 @@
                 </div>
             </div>
 
-            <div class="flex justify-between">
+            <!-- <div class="flex justify-between">
                 <button class="btn btn-outline w-36">Back</button>
                 <button class="btn w-36">Next</button>
+            </div> -->
+            <div>
+                <SetpForwardBackward />
             </div>
         </form>
     </div>
@@ -32,5 +35,6 @@
 
 <script setup>
 import MShead from './Common/MShead.vue';
+import SetpForwardBackward from './Common/SetpForwardBackward.vue';
 
 </script>
