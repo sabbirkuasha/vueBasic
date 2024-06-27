@@ -1,13 +1,15 @@
 <template>
     <div id="cards" class="ring flex justify-center items-center min-h-screen bg-slate-0">
         <div id="stepsContainer"
-            class="outline outline-slate-200 outline-[15px] flex rounded-sm overflow-hidden bg-slate-200">
+            class="outline outline-slate-200 outline-[15px] flex rounded-sm overflow-hidden bg-slate-200 ">
             <StepsCounter :steps="steps" />
 
-            <div id="steps-form-details" class="border-none px-5 py-1">
+            <div id="steps-form-details" class="border-none px-5 py-1 w-96 h-[566px] ">
                 <!-- <PersonalInfo /> -->
-                <PlansInfo />
+                <!-- <PlansInfo /> -->
                 <!-- <AddOns /> -->
+                <!-- <SummaryDetails /> -->
+                <ThankYou />
 
             </div>
         </div>
@@ -20,6 +22,8 @@ import PersonalInfo from './PersonalInfo.vue'
 import StepsCounter from './StepsCounter.vue'
 import PlansInfo from './PlansInfo.vue'
 import AddOns from './AddOns.vue';
+import SummaryDetails from './SummaryDetails.vue'
+import ThankYou from './ThankYou.vue';
 
 
 const steps = ([

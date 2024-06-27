@@ -34,7 +34,9 @@
                 </div>
             </div>
 
-            <SetpForwardBackward />
+            <div class="border">
+                <SetpForwardBackward />
+            </div>
         </form>
     </div>
 </template>
