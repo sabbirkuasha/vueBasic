@@ -1,3 +1,7 @@
+### Create Tutorial / Blogpost
+
+- [ ] Vue create component & props
+
 ### Learning
 
 - [x] Creating component

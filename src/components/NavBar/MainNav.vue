@@ -37,7 +37,7 @@ export default {
 import { ref } from 'vue';
 import ActionButton from '@/components/common/ActionButton.vue';
 
-const company = ref('Sabbirz');
+const company = ref('Vue3 Learning');
 const menuItems = ref({
   item1: {
     name: 'Home',
@@ -55,6 +55,10 @@ const menuItems = ref({
     name: 'Counter',
     url: '/counter'
   },
+  item5: {
+    name: 'Props',
+    url: '/name'
+  }
 });
 </script>
 
