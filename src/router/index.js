@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import MultiStep from '@/components/MultiStepForms/MultiStep.vue'
 import CounterMain from '@/components/Counter/CounterMain.vue'
 import NameList from '@/components/Name/NameList.vue'
+import DynaComp from '@/components/DynamicComponent/DynaComp.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/name',
       name: 'nameList',
       component: NameList
+    },
+    {
+      path: '/component',
+      name: 'BuiltInComponent',
+      component: DynaComp
     },
     {
       path: '/about',
